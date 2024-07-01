@@ -9,10 +9,10 @@
 
 nav,
 footer {
-  margin: 0px 100px 0px 100px;
+  /* margin: 0px 100px 0px 100px; */
   padding: 30px 0px 30px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -26,21 +26,29 @@ footer {
   gap: 10px;
   padding: 15px;
   border-radius: 35px;
-  background: green;
+  background: rgb(217, 233, 240);
 }
 
 .buttons {
+  border: none;
+  background: none;
+  padding: 10px;
+}
+
+/* .buttons:active {
   padding: 10px;
   border-radius: 20px;
   border: none;
   background: linear-gradient(to right,
-      green,
-      white);
-}
+      rgb(233, 241, 243),
+      rgb(94, 110, 234));
+} */
+
 
 .social-items {
   display: flex;
   gap: 20px;
+  padding: 15px;
 }
 
 .footer-socials {
