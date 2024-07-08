@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
     return (
         <footer>
@@ -5,9 +7,9 @@ export default function Footer() {
                 <p>© 2023 Nelius. All rights reserved</p>
             </div>
             <div className="footer-socials">
-                <p>Twitter</p>
-                <p>LinkedIn</p>
-                <p>GitHub</p>
+                <Link to='https://x.com/neliustoken' className="footer-items">Twitter</Link>
+                <Link to='https://www.linkedin.com/company/nelius/' className="footer-items">LinkedIn</Link>
+                <Link to='https://www.linkedin.com/company/nelius/' className="footer-items">GitHub</Link>
             </div>
             <div className="terms">
                 <p>Privacy - Terms</p>

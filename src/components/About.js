@@ -3,7 +3,6 @@ export default function About() {
         <main>
             <aside>
                 <h3>About Nelius</h3>
-                
             </aside>
         </main>
     )
