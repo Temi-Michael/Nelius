@@ -1,13 +1,13 @@
 import './App.css';
 import Nav from './components/Nav';
-import Home from './components/Home';
 import Footer from './components/Footer';
+import SectionOne from './components/sections/SectionOne';
 
 function App() {
   return (
     <div>
       <Nav home='Token Holders' about='Event Owners' />
-      <Home />
+      <SectionOne />
       <Footer />
     </div>
   );
