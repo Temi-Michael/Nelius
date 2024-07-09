@@ -4,10 +4,10 @@
   list-style-type: none;
   font-family: "Poppins", sans-serif;
 }
-
+/* 
 body{
   width: 100%;
-}
+} */
 
 .buttonComponent {
   width: 150px;
@@ -70,7 +70,7 @@ nav {
     display: flex;
   }
 
-  
+
 }
 
 .lists {
@@ -232,7 +232,7 @@ nav {
 .carousel .slide img {
   width: 100%;
   height: 500px;
-  object-fit: fill; /* Ensures the image covers the entire height and width without distortion */
+  object-fit: contain; /* Ensures the image covers the entire height and width without distortion */
 }
 
 .carousel .thumbs-wrapper {
