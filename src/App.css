@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  width: 100%;
+}
+
 .buttonComponent {
   width: 150px;
   height: 45px;
@@ -65,6 +69,8 @@ nav {
   .lists {
     display: flex;
   }
+
+  
 }
 
 .lists {
@@ -214,6 +220,44 @@ nav {
   margin-top: 0;
   line-height: 2rem;
 }
+
+/* CarouselPage.css */
+
+.carouselFrame {
+  margin-top: 50px;
+}
+
+/* CarouselPage.css */
+
+.carousel .slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill; /* Ensures the image covers the entire height and width without distortion */
+}
+
+.carousel .thumbs-wrapper {
+  display: none; /* Hides the thumbnail previews */
+}
+
+.carousel .control-dots .dot {
+  background-color: #000; /* Customize dot color */
+}
+
+.carousel .control-prev.control-arrow,
+.carousel .control-next.control-arrow {
+  opacity: 0.7; /* Customize arrow opacity */
+}
+
+.carousel .legend {
+  display: none;
+}
+/* .carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+} */
+
 
 /* FOOTER */
 
