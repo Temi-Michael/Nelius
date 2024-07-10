@@ -294,15 +294,47 @@ nav {
   font-weight: 500;
 }
 
+.subscribe {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+@media screen and (max-width : 700px) {
+  .inputContainer .emailInput {
+    font-size: 16px;
+    width: 200px;
+    padding-left: 15px;
+  }
+
+  .form {
+    margin-top: 50px;
+  }
+}
+
+.inputContainer {
+  position: relative;
+  margin: 0 auto;
+}
+
 .emailInput {
   width: 400px;
   height: 45px;
-  font-size: 16px;
+  margin-right: 10px;
+  font-size: 20px;
   border: none;
   background-color: white;
+  /* background-color: red; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   padding-left: 30px;
+  flex: 1;
+  outline: none;
 }
 
 .emailInput::placeholder {
