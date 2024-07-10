@@ -171,7 +171,7 @@ nav {
 @media screen and (max-width : 700px) {
   .sectionOneHeadText .headText {
     font-weight: 500;
-    font-size: xx-large;
+    font-size: x-large;
     line-height: 0.5rem;
   }
 
