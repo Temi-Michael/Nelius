@@ -1,5 +1,6 @@
 import Button from "../../assets/Button";
-import CarouselPage from "../Carousel";
+// import CarouselPage from "../Carousel";
+import LargeImages from "../LargeImages";
 
 export default function SectionOne() {
     return (
@@ -19,7 +20,8 @@ export default function SectionOne() {
                     </div>
                 </div>
             </div>
-            <CarouselPage />
+            {/* <CarouselPage /> */}
+            <LargeImages />
         </div>
 
     )

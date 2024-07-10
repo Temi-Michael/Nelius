@@ -12,10 +12,19 @@ body{
 .buttonComponent {
   width: 150px;
   height: 45px;
+  font-size: 16px;
   border: none;
   border-radius: 25px;
   color: white;
   background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(98, 146, 212), rgb(98, 146, 212), rgb(5, 20, 60));
+}
+
+@media screen and (max-width : 700px) {
+  .buttonComponent {
+    width: 90px;
+    height: 40px;
+    font-size: 10px;
+  }
 }
 
 /* NAV */
@@ -272,6 +281,35 @@ nav {
   padding: 10px;
   font-size: 1rem;
 } */
+
+/* SUBSCRIBE */
+
+.subscribeHead {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.subscribeText {
+  font-size: large;
+  font-weight: 500;
+}
+
+.emailInput {
+  width: 400px;
+  height: 45px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding-left: 30px;
+}
+
+.emailInput::placeholder {
+  color: #333333;
+  font-size: small;
+  font-weight: 500;
+}
 
 
 /* FOOTER */
