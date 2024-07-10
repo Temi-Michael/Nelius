@@ -4,7 +4,7 @@
   list-style-type: none;
   font-family: "Poppins", sans-serif;
 }
-/* 
+/*
 body{
   width: 100%;
 } */
@@ -168,6 +168,21 @@ nav {
 
 /* SECTION ONE */
 
+@media screen and (max-width : 700px) {
+  .sectionOneHeadText .headText {
+    font-weight: 500;
+    font-size: xx-large;
+    line-height: 0.5rem;
+  }
+
+  .sectionOneParagraph .headParagraph {
+    display: inline-block;
+    width: 90%;
+    font-size: medium;
+    font-weight: 400;
+  }
+}
+
 .circleBackground {
   position: absolute;
   top: 35%;
@@ -283,12 +298,19 @@ footer {
 @media screen and (max-width : 700px) {
 
   footer {
-    justify-content: space-between;
+    justify-content: space-around;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: 2%;
   }
 
   .date,
   .footer-items,
   .terms {
     font-size: xx-small;
+  }
+
+  .footer-socials {
+    gap: 5px;
   }
 }

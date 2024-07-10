@@ -8,11 +8,11 @@ export default function SectionOne() {
                 <div className="circleBackground"></div>
                 <div className="sectionOneFrame">
                     <div className="sectionOneHeadText">
-                        <p>Get <span className="textOne">Funded</span> ,Get <span className="textTwo">Public</span></p>
-                        <p>With Nelius</p>
+                        <p className="headText">Get <span className="textOne">Funded</span> ,Get <span className="textTwo">Public</span></p>
+                        <p className="headText">With Nelius</p>
                     </div>
                     <div className="sectionOneParagraph">
-                        <p>With the introduction of Nelius, a donation token, your events can be funded when supported events are publicised.</p>
+                        <p className="headParagraph">With the introduction of Nelius, a donation token, your events can be funded when supported events are publicised.</p>
                     </div>
                     <div className="sectionOneButton">
                         <Button button='Get Started' />
@@ -21,6 +21,6 @@ export default function SectionOne() {
             </div>
             <CarouselPage />
         </div>
-        
+
     )
 };
