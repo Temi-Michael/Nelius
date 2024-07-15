@@ -1,4 +1,4 @@
-import Logo from '../assets/Little-Lemon-logos/Asset 7@4x.png'
+import Logo from '../assets/img/logo/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTelegram, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'

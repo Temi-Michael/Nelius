@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
   list-style-type: none;
   font-family: "Poppins", sans-serif;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*
 body{
   width: 100%;
@@ -256,25 +262,30 @@ nav {
 .carousel .slide img {
   width: 100%;
   height: 500px;
-  object-fit: contain; /* Ensures the image covers the entire height and width without distortion */
+  object-fit: contain;
+  /* Ensures the image covers the entire height and width without distortion */
 }
 
 .carousel .thumbs-wrapper {
-  display: none; /* Hides the thumbnail previews */
+  display: none;
+  /* Hides the thumbnail previews */
 }
 
 .carousel .control-dots .dot {
-  background-color: #000; /* Customize dot color */
+  background-color: #000;
+  /* Customize dot color */
 }
 
 .carousel .control-prev.control-arrow,
 .carousel .control-next.control-arrow {
-  opacity: 0.7; /* Customize arrow opacity */
+  opacity: 0.7;
+  /* Customize arrow opacity */
 }
 
 .carousel .legend {
   display: none;
 }
+
 /* .carousel .legend {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -343,6 +354,53 @@ nav {
   font-weight: 500;
 }
 
+/* FAQ */
+
+.faq {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.faq .faq-head {
+  flex: 0.5;
+  font-weight: 500;
+  font-size: 64px;
+  /* background-color: aqua; */
+}
+
+.faq .faq-head .faqHeadText {
+  align-content: center;
+}
+
+.faq .faq-info {
+  flex: 1;
+  /* background-color: yellow; */
+}
+
+
+.faq-container {
+  /* width: 50%; */
+  margin: 20px auto;
+}
+
+.faq-item {
+  margin: 10px 0 10px 0;
+  border-radius: 12px;
+  width: 70%;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 10px 0;
+  color: #555;
+}
 
 /* FOOTER */
 
