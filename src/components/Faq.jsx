@@ -5,7 +5,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
         <div className="faq-item">
             <div className="faq-question" onClick={onClick}>
                 <span className="faq-icon" onClick={onClick}>{isOpen ? '-' : '+'}</span>
-                {question}
+                <span className='question'>{question}</span>
             </div>
             {isOpen && <div className="faq-answer">{answer}</div>}
         </div>
@@ -62,6 +62,7 @@ export default function Faq() {
                 </p>
             </div>
             <div className="faq-info">
+                <p className='small-faq'>FAQ</p>
                 <Dropdown />
             </div>
         </div>
