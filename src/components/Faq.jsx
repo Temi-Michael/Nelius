@@ -22,15 +22,15 @@ const Dropdown = () => {
         },
         {
             question: 'What type of events does Nelius support?',
-            answer: 'You can track your order using the tracking number...',
+            answer: 'Nelius supports christocentric events in which event owners plan to cater for food, shelter and security of attendees. Priority is given to events that spans over one day',
         },
         {
             question: 'Is Nelius available for events outside the Christian community?',
-            answer: 'Yes, we offer international shipping...',
+            answer: 'Nelius is targeted at Christian events with respect to major holders of the token',
         },
         {
             question: 'What benefits does Nelius offer to event owners?',
-            answer: 'Yes, we offer international shipping...',
+            answer: 'Nelius supports event owners in raising funds for their events and incentivizes promotion of the events thereby providing better publicity.',
         },
     ];
 

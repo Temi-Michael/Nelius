@@ -359,6 +359,7 @@ nav {
 .faq {
   display: flex;
   margin: 20px 0 20px 0;
+  align-items: center;
 }
 
 .small-faq {
@@ -369,27 +370,32 @@ nav {
   flex: 0.5;
   font-weight: 500;
   font-size: 64px;
-  background-color: aqua;
+  margin: auto;
+  /* background-color: aqua; */
 }
 
 .faq .faq-info {
   flex: 1;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 
 .faq-container {
-  /* width: 50%; */
+  justify-content: center;
   margin: 20px auto;
 }
 
 .faq-item {
-  margin: 10px 0 10px 0;
+  margin: auto;
   border-radius: 12px;
   width: 70%;
   background-color: #fcfcfc;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+}
+
+.faq-item {
+  margin-top: 20px;
 }
 
 .faq-question {
