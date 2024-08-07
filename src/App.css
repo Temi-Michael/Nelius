@@ -10,11 +10,6 @@
   display: none;
 }
 
-/*
-body{
-  width: 100%;
-} */
-
 .buttonComponent {
   width: 150px;
   height: 45px;
@@ -205,11 +200,9 @@ nav {
   width: 250px;
   height: 250px;
   background-color: #66acea;
-  /* Adjust the color as needed */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  /* Ensure the circle is behind the content */
   filter: blur(150px);
 }
 
