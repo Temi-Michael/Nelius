@@ -25,11 +25,11 @@ export default function Blueprint() {
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}}>{blueprints.one}</p>
+                    <p style={{}} className="cardText">{blueprints.one}</p>
                     <img src={One} alt="One" width={100} height={200} />
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}}>{blueprints.two}</p>
+                    <p style={{}} className="cardText">{blueprints.two}</p>
                     <img src={Two} alt="One" width={100} height={200} />
                 </div>
                 <div className="stageCards">
@@ -39,11 +39,11 @@ export default function Blueprint() {
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}}>{blueprints.three}</p>
+                    <p style={{}} className="cardText">{blueprints.three}</p>
                     <img src={Three} alt="One" width={100} height={200} />
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}}>{blueprints.four}</p>
+                    <p style={{}} className="cardText">{blueprints.four}</p>
                     <img src={Four} alt="One" width={100} height={200} />
                 </div>
                 <div className="stageCards">
@@ -53,7 +53,7 @@ export default function Blueprint() {
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}}>{blueprints.five}</p>
+                    <p style={{}} className="cardText">{blueprints.five}</p>
                     <img src={Five} alt="One" width={100} height={200} />
                 </div>
             </div>
