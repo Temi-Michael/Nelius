@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import Button from "../../assets/Button"
+import Submit from "../../assets/Submit";
 
 export default function Subscribe() {
     const [email, setEmail] = useState('')
@@ -32,7 +32,7 @@ export default function Subscribe() {
             <form action="" method="" className="form">
                 <div className="inputContainer">
                     <input type="email" className="emailInput" id="emailInput" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleSubmit} />
-                    <Button button="Subscribe" />
+                    <Submit button="Subscribe" />
                 </div>
             </form>
         </div>
