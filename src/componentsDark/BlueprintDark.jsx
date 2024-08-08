@@ -4,7 +4,7 @@ import Three from "../assets/img/logo/three.svg"
 import Four from "../assets/img/logo/four.svg"
 import Five from "../assets/img/logo/five.svg"
 
-export default function Blueprint() {
+export default function BlueprintDark() {
 
     const blueprints = {
         zero: "",
@@ -18,7 +18,7 @@ export default function Blueprint() {
     return (
         <div className="blueprint" id="blueprint">
             <p className="blueprintText">
-                The <span className="textOne">Nelius</span> Blueprint
+                The Nelius <span className="textOne">Blueprint</span>
             </p>
             <div className="blueprintStage">
                 <div className="stageCards">

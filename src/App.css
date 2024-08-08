@@ -10,11 +10,6 @@
   display: none;
 }
 
-/*
-body{
-  width: 100%;
-} */
-
 .buttonComponent {
   width: 150px;
   height: 45px;
@@ -205,11 +200,9 @@ nav {
   width: 250px;
   height: 250px;
   background-color: #66acea;
-  /* Adjust the color as needed */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  /* Ensure the circle is behind the content */
   filter: blur(150px);
 }
 
@@ -239,7 +232,7 @@ nav {
 
 .sectionOneParagraph p {
   display: inline-block;
-  width: 900px;
+  width: 100%;
   text-align: center;
   justify-content: center;
   font-size: 28px;
@@ -331,25 +324,21 @@ nav {
     margin: 0;
   }
 
-  .stageCard p {
-    display: flex;
-    align-items: center;
+  .stageCard .cardText {
     width: 100px;
     font-size: small;
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1160px) {
+@media screen and (min-width: 701px) and (max-width: 1160px) {
   .blueprint .blueprintText {
     font-size: xx-large;
     font-weight: 500;
     margin: 0;
   }
 
-  .stageCard p {
-    display: flex;
-    align-items: center;
-    width: 100px;
+  .stageCard .cardText {
+    width: 120px;
     font-size: small;
   }
 }
@@ -361,12 +350,12 @@ nav {
   align-items: center;
 }
 
-.stageCard p {
+.stageCard .cardText {
   z-index: 1;
   position: absolute;
   display: flex;
   align-items: center;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .blueprint {
