@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import Submit from "../../assets/Submit";
 
-export default function Subscribe() {
+export default function SubscribeDark() {
     const [email, setEmail] = useState('')
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -20,7 +20,7 @@ export default function Subscribe() {
         e.preventDefault();
     }
     return (
-        <div className="subscribe">
+        <div className="subscribe" style={{backgroundColor: 'black', color: 'white'}}>
             <p className="subscribeHead">
                 Ready To Get <span className="textOne">Funded</span>?
             </p>
