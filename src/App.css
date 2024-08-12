@@ -222,9 +222,15 @@ nav {
   line-height: 2rem;
 }
 
-.textOne,
-.textTwo {
+.textOne {
   background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(5, 20, 60), rgb(98, 146, 212), rgb(5, 20, 60), rgb(5, 20, 60));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.textTwo {
+  background: linear-gradient(45deg, rgb(42, 112, 59), rgb(42, 112, 59), rgb(66, 185, 96), rgb(42, 112, 59), rgb(42, 112, 59));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -290,7 +296,7 @@ nav {
 
 @media screen and (max-width: 700px) {
   .about .aboutHead {
-    font-size: small;
+    font-size: medium;
     font-weight: 500;
     text-align: center;
   }
@@ -298,7 +304,7 @@ nav {
 
 @media screen and (min-width: 700px) and (max-width: 1160px) {
   .about .aboutHead {
-    font-size: medium;
+    font-size: large;
     font-weight: 500;
     text-align: center;
   }
@@ -412,6 +418,20 @@ nav {
   .imageGrids .imageGridOne {
     gap: 10px;
   }
+
+  .imageGrids .info_back {
+    margin-top: 40px;
+  }
+
+  .infoBack {
+    width: 50%;
+  }
+
+  .info_back p.info_backP {
+    margin-top: -20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 
@@ -431,11 +451,31 @@ nav {
     height: 40px;
     font-size: 16px;
   }
+
+  .infoBack {
+    width: 70%;
+  }
+
+  .info_back .info_backP {
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.info_back {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.info_back .info_backP {
+  margin-top: -50px;
+  font-size: 64px;
+  font-weight: 500;
 }
 
 .info {
   margin: 0px 30px 0px 30px;
-  line-height: 0px;
 }
 
 .infoTwo {
@@ -691,7 +731,7 @@ footer {
 
 .footer-socials {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
 .footer-items {
@@ -712,10 +752,10 @@ footer {
   .date,
   .footer-items,
   .terms {
-    font-size: xx-small;
+    font-size: 8px;
   }
 
   .footer-socials {
-    gap: 5px;
+    gap: 10px;
   }
 }

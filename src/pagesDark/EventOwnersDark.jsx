@@ -1,9 +1,9 @@
 import SectionOne from "../components/sections/SectionOne";
-import Subscribe from "../components/sections/Subscribe";
 import AboutDark from "../componentsDark/AboutDark";
 import BlueprintDark from "../componentsDark/BlueprintDark";
 import FaqDark from "../componentsDark/FaqDark";
 import InfoDark from "../componentsDark/InfoDark";
+import SubscribeDark from "../componentsDark/sections/SubscribeDark";
 
 export default function EventOwnersDark() {
   return (
@@ -12,7 +12,7 @@ export default function EventOwnersDark() {
       <AboutDark />
       <BlueprintDark />
       <InfoDark />
-      <Subscribe />
+      <SubscribeDark />
       <FaqDark />
     </div>
   );
