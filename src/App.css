@@ -227,11 +227,8 @@ nav {
   transition: 0.4s;
   border-radius: 50%;
   background-image: url('./assets/img/logo/light_mode.svg');
-  /* Add your image here */
   background-size: cover;
-  /* Ensure the image covers the entire circle */
   background-position: center;
-  /* Center the image */
 }
 
 /* Checked state */
@@ -242,11 +239,8 @@ input:checked+.slider {
 /* Move the slider when checked */
 input:checked+.slider:before {
   background-image: url('./assets/img/logo/dark_mode.svg');
-  /* Add your image here */
   background-size: cover;
-  /* Ensure the image covers the entire circle */
   background-position: center;
-  /* Center the image */
   transform: translateX(26px);
 }
 
