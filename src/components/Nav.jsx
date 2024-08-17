@@ -32,7 +32,6 @@ export default function Nav(props) {
     };
 
     const styles = {
-        padding: '10px',
         borderRadius: '20px',
         border: 'none',
         background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
