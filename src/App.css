@@ -79,8 +79,14 @@ nav {
   .lists {
     display: flex;
   }
+}
 
-
+@media screen and (max-width : 700px) {
+  .toggle-list {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
 }
 
 .lists {
@@ -92,6 +98,10 @@ nav {
 .list-items {
   padding: 10px 20px;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.toggle-list {
+  margin: auto;
 }
 
 .buttons {
@@ -175,6 +185,71 @@ nav {
     display: none;
   }
 }
+
+/* The switch - the box around the slider */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  background-image: url('./assets/img/logo/light_mode.svg');
+  /* Add your image here */
+  background-size: cover;
+  /* Ensure the image covers the entire circle */
+  background-position: center;
+  /* Center the image */
+}
+
+/* Checked state */
+input:checked+.slider {
+  background-color: #000000;
+}
+
+/* Move the slider when checked */
+input:checked+.slider:before {
+  background-image: url('./assets/img/logo/dark_mode.svg');
+  /* Add your image here */
+  background-size: cover;
+  /* Ensure the image covers the entire circle */
+  background-position: center;
+  /* Center the image */
+  transform: translateX(26px);
+}
+
 
 /* SECTION ONE */
 

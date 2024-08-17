@@ -4,6 +4,21 @@ import { faTelegram, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+function ToggleSwitch() {
+    const [isToggled, setIsToggled] = useState(false);
+
+    const toggleSwitch = () => {
+        setIsToggled(!isToggled);
+    };
+
+    return (
+        <label className="toggle-switch">
+            <input type="checkbox" checked={isToggled} onChange={toggleSwitch} />
+            <span className="slider"></span>
+        </label>
+    );
+}
+
 export default function Nav(props) {
     const [activeButton, setActiveButton] = useState(props.home);
     const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +38,6 @@ export default function Nav(props) {
         background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
     };
 
-
-
     return (
         <nav>
             <div className="logo">
@@ -36,6 +49,7 @@ export default function Nav(props) {
                         onClick={handleClick}>{props.home}</button></li>
                     <li className="list-items"><button className='buttons' style={activeButton === props.about ? styles : {}}
                         onClick={handleClick}>{props.about}</button></li>
+                    <li className='toggle-list'><ToggleSwitch /></li>
                 </ul>
             </div>
             <div className="nav-socials">
@@ -55,6 +69,7 @@ export default function Nav(props) {
                 </ul>
             </div>
             <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleHamburger}>
+                <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
