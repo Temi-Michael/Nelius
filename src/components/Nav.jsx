@@ -4,20 +4,6 @@ import { faTelegram, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-function ToggleSwitch() {
-    const [isToggled, setIsToggled] = useState(false);
-
-    const toggleSwitch = () => {
-        setIsToggled(!isToggled);
-    };
-
-    return (
-        <label className="toggle-switch">
-            <input type="checkbox" checked={isToggled} onChange={toggleSwitch} />
-            <span className="slider"></span>
-        </label>
-    );
-}
 
 export default function Nav(props) {
     const [activeButton, setActiveButton] = useState(props.home);
@@ -36,6 +22,26 @@ export default function Nav(props) {
         border: 'none',
         background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
     };
+
+    function ToggleSwitch() {
+        const [isToggled, setIsToggled] = useState(false);
+
+        const toggleSwitch = () => {
+            setIsToggled(!isToggled);
+        };
+
+        return (
+            <label className="toggle-switch">
+                <input type="checkbox" checked={isToggled} onChange={toggleSwitch} />
+                <span className="slider"></span>
+            </label>
+        );
+    }
+
+    // const colorSwitch = {
+    //     backgroundColor : 'black',
+    //     color : 'white'
+    // }
 
     return (
         <nav>

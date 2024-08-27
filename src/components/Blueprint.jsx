@@ -20,17 +20,17 @@ export default function Blueprint() {
             <p className="blueprintText">
                 The <span className="textOne">Nelius</span> Blueprint
             </p>
-            <div className="blueprintStage">
+            <div className="blueprintStage" id="blueprintStage">
                 <div className="stageCards">
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText">{blueprints.one}</p>
-                    <img src={One} alt="One" width={100} height={200} />
+                    <img src={One} alt="One" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText">{blueprints.two}</p>
-                    <img src={Two} alt="One" width={100} height={200} />
+                    <img src={Two} alt="Two" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCards">
                     <p>{blueprints.zero[1]}</p>
@@ -40,11 +40,11 @@ export default function Blueprint() {
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText">{blueprints.three}</p>
-                    <img src={Three} alt="One" width={100} height={200} />
+                    <img src={Three} alt="Three" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText">{blueprints.four}</p>
-                    <img src={Four} alt="One" width={100} height={200} />
+                    <img src={Four} alt="Four" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCards">
                     <p>{blueprints.zero[1]}</p>
@@ -54,7 +54,7 @@ export default function Blueprint() {
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText">{blueprints.five}</p>
-                    <img src={Five} alt="One" width={100} height={200} />
+                    <img src={Five} alt="Five" width={100} height={200} className="blueprintImage" />
                 </div>
             </div>
         </div>

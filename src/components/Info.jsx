@@ -12,7 +12,7 @@ import ToDo from "../assets/img/logo/to-do.svg"
 export default function Info() {
 
     return (
-        <div className="info">
+        <div className="info" id="info">
             <div className="infoOne">
                 <p className="infoText">Gettin<span className="textOne">g Your Events</span> Noticed</p>
             </div>
