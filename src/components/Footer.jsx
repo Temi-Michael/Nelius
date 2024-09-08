@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ToggleContext } from './ToggleContext'
 
 export default function Footer() {
+    const { isToggled } = useContext(ToggleContext);
+    const dark = {
+        backgroundColor : '#0c0c3f',
+        color : 'white',
+    }
     return (
-        <footer>
+        <footer style={!isToggled ? dark :{}}>
             <div className="date">
                 <p>© 2023 Nelius. All rights reserved</p>
             </div>

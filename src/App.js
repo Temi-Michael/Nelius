@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import EventOwners from './pages/EventOwners';
 
 function App() {
+
   return (
     <ToggleProvider>
       <div>

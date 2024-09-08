@@ -40,7 +40,7 @@ export default function Nav2(props) {
     }
 
     const colorSwitch = {
-        backgroundColor: 'black',
+        backgroundColor: '#0c0c3f',
         color: 'white',
     };
     return (
