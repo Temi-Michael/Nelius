@@ -44,6 +44,11 @@ const styles = {
         gap: '20px',
         gridTemplateColumns: '1fr 1fr 1fr',
     },
+    noGrid : {
+        display : 'block',
+        alignItems : 'center',
+        gap : '20px',
+    },
     image: {
         width: '100%',
         height: '100%',
@@ -75,7 +80,7 @@ const InfoImg = () => {
                     <p className="info_backP">All yo<span className="textTwo">u need</span> to<br></br>nomi<span className="textTwo">nate yo</span>ur event</p>
                 )}
             </div>
-            <div style={styles.imageGrid} className="imageGrid">
+            <div style={!isMobile ? styles.imageGrid : styles.noGrid} className="imageGrid">
                 <img src={Dove} alt="Large images" style={styles.image} />
                 <img src={Plant} alt="Large images" style={styles.image} />
             </div>
@@ -86,7 +91,7 @@ const InfoImg = () => {
                     <p className="info_backP">Sim<span className="textTwo">ple actions for e</span>vent<br></br><span className="textTwo">owners / facilit</span>ators</p>
                 )}
             </div>
-            <div style={styles.imageGrid1} className="imageGridOne">
+            <div style={!isMobile ? styles.imageGrid1 : styles.noGrid} className="imageGridOne">
                 <img src={Interest} alt="Large images" style={styles.image} />
                 <img src={Wallet} alt="Large images" style={styles.image} />
                 <img src={Spread} alt="Large images" style={styles.image} />
