@@ -384,6 +384,12 @@ input:checked+.slider:before {
   #about {
     margin: 0px 30px 0px 30px;
   }
+
+  #about-dark {
+    margin: 0px 30px 0px 30px #0c0c3f;
+    background-color: '#0c0c3f';
+    color: 'white';
+  }
   
   .about .aboutHead {
     font-size: large;

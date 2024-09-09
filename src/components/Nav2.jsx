@@ -25,11 +25,11 @@ export default function Nav2(props) {
     };
 
     const inactiveStyles = {
-        color: 'black'
+        color: !isToggled ? 'white' : 'black'
     }
 
     const inactiveStyles1 = {
-        color: 'white'
+        color: !isToggled ? 'black' : 'white'
     }
 
     const styles1 = {
