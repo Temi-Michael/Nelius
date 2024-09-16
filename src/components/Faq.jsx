@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { ToggleContext } from './ToggleContext';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
+
     return (
         <div className="faq-item">
             <div className="faq-question" onClick={onClick}>
@@ -54,10 +56,17 @@ const Dropdown = () => {
 };
 
 export default function Faq() {
+
+    const styles = {
+        color : 'white',
+        backgroundColor: '#0c0c3f'
+    }
+    const { isToggled } = useContext(ToggleContext);
+
     return (
-        <div className="faq">
+        <div className="faq" style={!isToggled ? styles : {}}>
             <div className="faq-head">
-                <p className="faqHeadText">
+                <p className="faqHeadText" style={!isToggled ? styles : {}}>
                     Frequently Asked <span className="textOne">Questions</span>
                 </p>
             </div>

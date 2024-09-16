@@ -1,9 +1,17 @@
 import { useState, useEffect } from "react"
 import Submit from "../../assets/Submit";
+import { useContext } from "react";
+import { ToggleContext } from '../ToggleContext'
 
 export default function Subscribe() {
+    const { isToggled } = useContext(ToggleContext);
     const [email, setEmail] = useState('')
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const dark = {
+        backgroundColor: '#0c0c3f',
+        color: 'white',
+    }
 
     useEffect(() => {
         const handleResize = () => {
@@ -20,7 +28,7 @@ export default function Subscribe() {
         e.preventDefault();
     }
     return (
-        <div className="subscribe">
+        <div className="subscribe" style={!isToggled ? dark : {}}>
             <p className="subscribeHead">
                 Ready To Get <span className="textOne">Funded</span>?
             </p>

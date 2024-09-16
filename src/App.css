@@ -52,7 +52,10 @@ nav {
   padding: 15px 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo-img {
@@ -227,26 +230,20 @@ nav {
   transition: 0.4s;
   border-radius: 50%;
   background-image: url('./assets/img/logo/light_mode.svg');
-  /* Add your image here */
   background-size: cover;
-  /* Ensure the image covers the entire circle */
   background-position: center;
-  /* Center the image */
 }
 
 /* Checked state */
 input:checked+.slider {
-  background-color: #000000;
+  background-color: rgb(173, 173, 173);
 }
 
 /* Move the slider when checked */
 input:checked+.slider:before {
   background-image: url('./assets/img/logo/dark_mode.svg');
-  /* Add your image here */
   background-size: cover;
-  /* Ensure the image covers the entire circle */
   background-position: center;
-  /* Center the image */
   transform: translateX(26px);
 }
 
@@ -281,8 +278,13 @@ input:checked+.slider:before {
   filter: blur(150px);
 }
 
-.sectionOne {
+/* .sectionOne {
   margin: auto;
+  margin-top: 120px;
+} */
+.sectionOne {
+  padding: auto;
+  padding-top: 120px;
 }
 
 .sectionOneHeadText,
@@ -370,6 +372,13 @@ input:checked+.slider:before {
 /* ABOUT */
 
 @media screen and (max-width: 700px) {
+  /* #about {
+    margin: 0px 30px 0px 30px;
+  } */
+  #about {
+    padding: 0px 30px 0px 30px;
+  }
+  
   .about .aboutHead {
     font-size: medium;
     font-weight: 500;
@@ -378,6 +387,20 @@ input:checked+.slider:before {
 }
 
 @media screen and (min-width: 700px) and (max-width: 1160px) {
+
+  /* #about {
+    margin: 0px 30px 0px 30px;
+  } */
+  #about {
+    padding: 0px 30px 0px 30px;
+  }
+
+  #about-dark {
+    margin: 0px 30px 0px 30px #0c0c3f;
+    background-color: '#0c0c3f';
+    color: 'white';
+  }
+  
   .about .aboutHead {
     font-size: large;
     font-weight: 500;
@@ -386,7 +409,7 @@ input:checked+.slider:before {
 }
 
 .about {
-  margin: 0px 30px 0px 30px;
+  margin: 0px 100px 0px 100px;
 }
 
 .aboutHead {
@@ -399,6 +422,21 @@ input:checked+.slider:before {
 /* BLUEPRINT */
 
 @media screen and (max-width: 700px) {
+  .blueprintImage {
+    height: 60%;
+    width: 60%;
+  }
+
+  .blueprintStage .stageCard {
+    display: grid;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  #blueprint {
+    margin: 0px 30px 0px 30px;
+  }
+
   .blueprint .blueprintText {
     font-size: x-large;
     font-weight: 500;
@@ -406,12 +444,23 @@ input:checked+.slider:before {
   }
 
   .stageCard .cardText {
-    width: 100px;
-    font-size: small;
+    width: 100%;
+    font-size: xx-small;
   }
 }
 
 @media screen and (min-width: 701px) and (max-width: 1160px) {
+  .blueprintImage {
+    height: 60%;
+    width: 60%;
+  }
+
+  .blueprintStage .stageCard {
+    display: grid;
+    align-items: center;
+    padding-left: 0;
+  }
+
   .blueprint .blueprintText {
     font-size: xx-large;
     font-weight: 500;
@@ -419,28 +468,29 @@ input:checked+.slider:before {
   }
 
   .stageCard .cardText {
-    width: 120px;
+    width: 100%;
     font-size: small;
   }
 }
 
 .blueprintStage .stageCard {
-  position: relative;
-  height: 200px;
   display: grid;
   align-items: center;
+  position: relative;
+  height: 200px;
+  padding-left: 5%;
 }
 
 .stageCard .cardText {
   z-index: 1;
+  width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
-  /* width: 300px; */
 }
 
 .blueprint {
-  margin: 0 30px 0 30px;
+  margin: 0 100px 0 100px;
 }
 
 .blueprintText {
@@ -449,12 +499,12 @@ input:checked+.slider:before {
   margin: 0;
 }
 
-.blueprintStage {
+#blueprintStage {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin: 0px 30px 20px 30px;
-  align-items: center;
 }
 
 
@@ -462,15 +512,14 @@ input:checked+.slider:before {
 /* INFO */
 
 @media screen and (max-width : 799px) {
-
   .infoOne,
   .info .infoTwo .infoFlexOne {
     display: none;
   }
 
-  .info {
+  #info {
     display: block;
-    margin: 0;
+    margin: 0px 30px 0px 30px;
   }
 
   .infoTwo .infoFlexTwo {
@@ -511,6 +560,11 @@ input:checked+.slider:before {
 
 
 @media screen and (min-width: 800px) and (max-width: 1160px) {
+  #info {
+    display: block;
+    margin: 0px 30px 0px 30px;
+  }
+
   .infoTwo .infoFlexTwo {
     display: flex;
     justify-content: center;
@@ -550,7 +604,7 @@ input:checked+.slider:before {
 }
 
 .info {
-  margin: 0px 30px 0px 30px;
+  margin: 0px 100px 0px 100px;
 }
 
 .infoTwo {
@@ -567,6 +621,11 @@ input:checked+.slider:before {
   display: flex;
   flex: 1;
   justify-content: flex-end;
+}
+
+.infoOne .infoText {
+  margin: 0px;
+
 }
 
 .infoText {
@@ -598,6 +657,13 @@ input:checked+.slider:before {
 }
 
 @media screen and (max-width : 700px) {
+
+  .subscribeText {
+    font-size: small;
+    font-weight: 500;
+    /* color: linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80)); */
+    }
+
   .inputContainer .emailInput {
     font-size: 16px;
     width: 200px;
@@ -637,9 +703,14 @@ input:checked+.slider:before {
 
 /* FAQ */
 
-.faq {
+/* .faq {
   display: flex;
   margin: 20px 0 20px 30px;
+  align-items: center;
+} */
+.faq {
+  display: flex;
+  padding: 20px 0 20px 30px;
   align-items: center;
 }
 
@@ -657,6 +728,7 @@ input:checked+.slider:before {
 
 .faq .faq-info {
   flex: 1;
+  margin: 0px 30px 0px 0px;
   /* background-color: yellow; */
 }
 
@@ -690,7 +762,7 @@ input:checked+.slider:before {
 }
 
 .faq-answer {
-  padding: 10px 0;
+  padding: 10px 10px 0 0;
   color: #555;
   margin-left: 50px;
 }
@@ -817,11 +889,15 @@ footer {
 
 @media screen and (max-width : 700px) {
 
+  /* footer {
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 2%;
+  } */
   footer {
     justify-content: space-around;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    margin: 2%;
+    padding: 2%;
   }
 
   .date,

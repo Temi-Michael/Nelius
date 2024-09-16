@@ -1,15 +1,19 @@
 import './App.css';
-import Nav from './components/Nav';
+import { ToggleProvider } from './components/ToggleContext';
+import Nav2 from './components/Nav2';
 import Footer from './components/Footer';
 import EventOwners from './pages/EventOwners';
 
 function App() {
+
   return (
-    <div>
-      <Nav home='Token Holders' about='Event Owners' />
-      <EventOwners />
-      <Footer />
-    </div>
+    <ToggleProvider>
+      <div>
+        <Nav2 home='Token Holders' about='Event Owners' />
+        <EventOwners />
+        <Footer />
+      </div>
+    </ToggleProvider>
   );
 }
 
