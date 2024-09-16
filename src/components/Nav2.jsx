@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ToggleContext } from './ToggleContext';
-import Logo from '../assets/img/logo/logo.svg';
+// import Logo from '../assets/img/logo/logo.svg';
+import Logo from '../assets/img/logo/logo_nelius.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -40,7 +41,7 @@ export default function Nav2(props) {
     }
 
     const colorSwitch = {
-        backgroundColor: '#0c0c3f',
+        backgroundColor: 'rgb(19, 55, 128)',
         color: 'white',
     };
     return (

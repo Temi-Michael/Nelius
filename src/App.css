@@ -278,9 +278,13 @@ input:checked+.slider:before {
   filter: blur(150px);
 }
 
-.sectionOne {
+/* .sectionOne {
   margin: auto;
   margin-top: 120px;
+} */
+.sectionOne {
+  padding: auto;
+  padding-top: 120px;
 }
 
 .sectionOneHeadText,
@@ -368,8 +372,11 @@ input:checked+.slider:before {
 /* ABOUT */
 
 @media screen and (max-width: 700px) {
-  #about {
+  /* #about {
     margin: 0px 30px 0px 30px;
+  } */
+  #about {
+    padding: 0px 30px 0px 30px;
   }
   
   .about .aboutHead {
@@ -381,8 +388,11 @@ input:checked+.slider:before {
 
 @media screen and (min-width: 700px) and (max-width: 1160px) {
 
-  #about {
+  /* #about {
     margin: 0px 30px 0px 30px;
+  } */
+  #about {
+    padding: 0px 30px 0px 30px;
   }
 
   #about-dark {
@@ -693,9 +703,14 @@ input:checked+.slider:before {
 
 /* FAQ */
 
-.faq {
+/* .faq {
   display: flex;
   margin: 20px 0 20px 30px;
+  align-items: center;
+} */
+.faq {
+  display: flex;
+  padding: 20px 0 20px 30px;
   align-items: center;
 }
 
@@ -874,11 +889,15 @@ footer {
 
 @media screen and (max-width : 700px) {
 
+  /* footer {
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 2%;
+  } */
   footer {
     justify-content: space-around;
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    margin: 2%;
+    padding: 2%;
   }
 
   .date,
