@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { ToggleContext } from './ToggleContext';
 
 import Button from "../assets/Button";
 import Dove from "../assets/img/logo/dove.svg"
@@ -10,9 +11,14 @@ import Spread from "../assets/img/logo/spread.svg"
 import ToDo from "../assets/img/logo/to-do.svg"
 
 export default function Info() {
+    const { isToggled } = useContext(ToggleContext);
+    const styles = {
+        color : 'white',
+        backgroundColor: '#0c0c3f'
+    }
 
     return (
-        <div className="info" id="info">
+        <div className="info" id="info" style={!isToggled ? styles : {}}>
             <div className="infoOne">
                 <p className="infoText">Gettin<span className="textOne">g Your Events</span> Noticed</p>
             </div>

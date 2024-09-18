@@ -3,8 +3,15 @@ import Two from "../assets/img/logo/two.svg"
 import Three from "../assets/img/logo/three.svg"
 import Four from "../assets/img/logo/four.svg"
 import Five from "../assets/img/logo/five.svg"
+import React, { useContext } from 'react';
+import { ToggleContext } from './ToggleContext';
 
 export default function Blueprint() {
+    const { isToggled } = useContext(ToggleContext);
+    const colorSwitch = {
+        backgroundColor: '#0c0c3f',
+        color: 'white',
+    };
 
     const blueprints = {
         zero: "",
@@ -16,7 +23,7 @@ export default function Blueprint() {
     }
 
     return (
-        <div className="blueprint" id="blueprint">
+        <div className="blueprint" id="blueprint" style={!isToggled ? colorSwitch : {}}>
             <p className="blueprintText">
                 The <span className="textOne">Nelius</span> Blueprint
             </p>
