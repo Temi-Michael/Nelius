@@ -2,18 +2,24 @@ import { useState, useEffect, useContext } from "react";
 import { ToggleContext } from './ToggleContext';
 
 import Button from "../assets/Button";
+
 import Dove from "../assets/img/logo/dove.svg"
+import DoveDark from "../assets/img/logo/doveDark.svg"
 import Criteria from "../assets/img/logo/criteria.svg"
 import Plant from "../assets/img/logo/plant.svg"
+import PlantDark from "../assets/img/logo/plantDark.svg"
 import Interest from "../assets/img/logo/interest.svg"
+import InterestDark from "../assets/img/logo/interestDark.svg"
 import Wallet from "../assets/img/logo/wallet.svg"
+import WalletDark from "../assets/img/logo/walletDark.svg"
 import Spread from "../assets/img/logo/spread.svg"
+import SpreadDark from "../assets/img/logo/spreadDark.svg"
 import ToDo from "../assets/img/logo/to-do.svg"
 
 export default function Info() {
     const { isToggled } = useContext(ToggleContext);
     const styles = {
-        color : 'white',
+        color: 'white',
         backgroundColor: '#0c0c3f'
     }
 
@@ -50,10 +56,10 @@ const styles = {
         gap: '20px',
         gridTemplateColumns: '1fr 1fr 1fr',
     },
-    noGrid : {
-        display : 'block',
-        alignItems : 'center',
-        gap : '20px',
+    noGrid: {
+        display: 'block',
+        alignItems: 'center',
+        gap: '20px',
     },
     image: {
         width: '100%',
@@ -62,7 +68,7 @@ const styles = {
 };
 
 const InfoImg = () => {
-
+    const { isToggled } = useContext(ToggleContext);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
@@ -87,8 +93,8 @@ const InfoImg = () => {
                 )}
             </div>
             <div style={!isMobile ? styles.imageGrid : styles.noGrid} className="imageGrid">
-                <img src={Dove} alt="Large images" style={styles.image} />
-                <img src={Plant} alt="Large images" style={styles.image} />
+                <img src={!isToggled ? DoveDark : Dove} alt="Large images" style={styles.image} />
+                <img src={!isToggled ? PlantDark : Plant} alt="Large images" style={styles.image} />
             </div>
             <div className="info_back">
                 <img src={ToDo} alt="todo_img" className="infoBack" />
@@ -98,9 +104,9 @@ const InfoImg = () => {
                 )}
             </div>
             <div style={!isMobile ? styles.imageGrid1 : styles.noGrid} className="imageGridOne">
-                <img src={Interest} alt="Large images" style={styles.image} />
-                <img src={Wallet} alt="Large images" style={styles.image} />
-                <img src={Spread} alt="Large images" style={styles.image} />
+                <img src={!isToggled ? InterestDark : Interest} alt="Large images" style={styles.image} />
+                <img src={!isToggled ? WalletDark : Wallet} alt="Large images" style={styles.image} />
+                <img src={!isToggled ? SpreadDark : Spread} alt="Large images" style={styles.image} />
             </div>
         </div>
     )
